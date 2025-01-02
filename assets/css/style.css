@@ -560,7 +560,7 @@ Custom
   margin: 0 auto 3rem auto;
   width: 90%;
   text-align: center;
-  color: #000;
+  color: #005f8b;
   font-weight: bold;
 }
 
@@ -609,7 +609,7 @@ Custom
 }
 
 .wallet h5 {
-  color: #000;
+  color: #005f8b;
   font-size: 1rem;
   text-align: center;
 }
@@ -640,7 +640,7 @@ Popup style
 
 /* Popup content box */
 .popup-content {
-  background-color: rgb(39, 39, 39);
+  background-color: rgb(255, 255, 255);
   border-radius: 10px;
   padding: 2rem 20px;
   width: 90%;
@@ -648,9 +648,19 @@ Popup style
   text-align: center;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(0px);
-  background-image: url(/assets/images/banner-left.png);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.popup-content::before {
+  content: "";
+  background-image: url(../images/baner-dec-right.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 98px;
+  height: 290px;
 }
 
 .popup-content .wallet-name {
@@ -667,7 +677,7 @@ Popup style
 
 .popup-content .wallet-name h4 {
   font-weight: 800;
-  color: #fff;
+  color: #005f8b;
 }
 
 form {
@@ -679,7 +689,7 @@ form {
 label {
   margin-top: 3rem;
   text-align: left;
-  color: #fff;
+  color: #000;
 }
 
 input {
